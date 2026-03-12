@@ -18,7 +18,7 @@ function Home() {
       <Features />
       <HowItWorks />
       <Stats />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
