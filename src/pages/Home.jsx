@@ -12,8 +12,8 @@ function Home() {
 
   return (
     <>
-      <TopHeader />
-      <Navbar />
+      {/* <TopHeader />
+      <Navbar /> */}
       <Hero />
       <Features />
       <HowItWorks />

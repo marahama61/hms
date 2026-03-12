@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
@@ -33,7 +33,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
@@ -43,7 +43,7 @@ function App() {
             <Route path="/appointments" element={<Appointments />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </ThemeProvider>
   );
