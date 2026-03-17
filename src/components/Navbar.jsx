@@ -11,7 +11,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
 function Navbar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [openMenu, setOpenMenu] = useState(null);
   const closeTimer = useRef(null);
 
@@ -157,12 +157,18 @@ function Navbar() {
       )}
     </AppBar>
     <Drawer
-        anchor="left"
+        anchor={i18n.language === "ar" ? "right" : "left"}
         open={mobileOpen}
         onClose={toggleDrawer}
         >
 
-        <Box sx={{ width: 250, p: 2 }}>
+        <Box sx={{
+            width: 250,
+            p: 2,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: i18n.language === "ar" ? "flex-end" : "flex-start"
+            }}>
 
         <Button fullWidth component={Link} to="/" sx={{ textTransform: "none" }}>
         {t("home")}
@@ -172,19 +178,19 @@ function Navbar() {
         {t("specialties")}
         </Button>
 
-        <Button fullWidth>
+        <Button fullWidth sx={{ textTransform: "none"}}>
         {t("services")}
         </Button>
 
-        <Button fullWidth>
+        <Button fullWidth sx={{ textTransform: "none"}}>
         {t("appointments")}
         </Button>
 
-        <Button fullWidth component={Link} to="/login">
+        <Button fullWidth component={Link} to="/login" sx={{ textTransform: "none"}}>
         {t("log in")}
         </Button>
 
-        <Button fullWidth component={Link} to="/register">
+        <Button fullWidth component={Link} to="/register" sx={{ textTransform: "none"}}>
         {t("register")}
         </Button>
 
