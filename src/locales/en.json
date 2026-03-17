@@ -23,7 +23,7 @@
   "footer_text": "© 2026 Smart Medical Services Platform. All rights reserved.",
   "language": "Language",
   "support": "Support",
-  "hospital_name": "Al-Mugtarbeen Hospital",
+  "hospital_name": "Khartoum Teaching Hospital",
   
   "how_it_works": "How It Works",
 
@@ -51,5 +51,8 @@
   "email": "Email Address",
   "password": "Password",
   "confirm_password": "Confirm Password",
-  "full_name": "Full Name"
+  "full_name": "Full Name",
+  "phone": "Phone",
+  "registration_success": "Registration successful",
+  "registration_failed": "Registration failed"
 }

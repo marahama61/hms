@@ -4,7 +4,6 @@
   "services": "خدماتنا",
   "appointments": "المواعيد",
   "log in": "تسجيل الدخول",
-  "register": "التسجيل",
   "platform_title": "منصة الخدمات الطبية الذكية",
   "platform_subtitle": "احجز مواعيدك وادير صحتك بسهولة",
   "book_now": "احجز الآن",
@@ -23,7 +22,7 @@
   "footer_text": "© 2026 جميع الحقوق محفوظة للمنصة الطبية الذكية",
   "language": "اللغة",
   "support": "الدعم",
-  "hospital_name": "مستشفى المغتربين",
+  "hospital_name": "مستشفى الخرطوم التعليمى",
    "how_it_works": "كيف تعمل المنصة",
 
   "step1_title": "حجز الموعد",
@@ -50,5 +49,9 @@
   "email": "البريد الإلكتروني",
   "password": "كلمة المرور",
   "confirm_password": "تأكيد كلمة المرور",
-  "full_name": "الاسم الكامل"
+  "full_name": "الاسم الكامل",
+  "register": "تسجيل حساب",
+  "registration_success": "تم إنشاء الحساب بنجاح",
+  "registration_failed": "فشل إنشاء الحساب",
+  "phone": "رقم الهاتف"
 }

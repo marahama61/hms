@@ -19,14 +19,21 @@ function TopHeader() {
         py: 1,
         backgroundColor: "#19648d",
         color: "white",
-        fontSize: "14px"
+        fontSize: { xs: "12px", md: "14px" }
       }}
     >
       {/* معلومات الدعم */}
-      <Box sx={{ display: "flex", gap: 3 }}>
+      <Box
+        sx={{
+          display: "flex",
+          gap: { xs: 2, md: 3 },
+          flexWrap: "wrap",
+          justifyContent: { xs: "center", md: "flex-start" }
+          }}
+        >
 
         <Typography>
-          📞 +966 500000000
+          📞 +966 512345678
         </Typography>
 
         <Typography>
