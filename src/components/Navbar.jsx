@@ -170,27 +170,33 @@ function Navbar() {
             alignItems: i18n.language === "ar" ? "flex-end" : "flex-start"
             }}>
 
-        <Button fullWidth component={Link} to="/" sx={{ textTransform: "none" }}>
+        <Button fullWidth component={Link} to="/" 
+            sx={{ textTransform: "none" }}
+            onClick={toggleDrawer}>
         {t("home")}
         </Button>
 
-        <Button fullWidth>
+        <Button fullWidth sx={{ textTransform: "none"}} onClick={toggleDrawer}>
         {t("specialties")}
         </Button>
 
-        <Button fullWidth sx={{ textTransform: "none"}}>
+        <Button fullWidth sx={{ textTransform: "none"}} onClick={toggleDrawer}>
         {t("services")}
         </Button>
 
-        <Button fullWidth sx={{ textTransform: "none"}}>
+        <Button fullWidth sx={{ textTransform: "none"}} onClick={toggleDrawer}>
         {t("appointments")}
         </Button>
 
-        <Button fullWidth component={Link} to="/login" sx={{ textTransform: "none"}}>
+        <Button fullWidth component={Link} to="/login" 
+            sx={{ textTransform: "none"}}
+            onClick={toggleDrawer}>
         {t("log in")}
         </Button>
 
-        <Button fullWidth component={Link} to="/register" sx={{ textTransform: "none"}}>
+        <Button fullWidth component={Link} to="/register" 
+            sx={{ textTransform: "none"}}
+            onClick={toggleDrawer}>
         {t("register")}
         </Button>
 
