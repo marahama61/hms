@@ -164,7 +164,7 @@ function Navbar() {
 
         <Box sx={{ width: 250, p: 2 }}>
 
-        <Button fullWidth component={Link} to="/">
+        <Button fullWidth component={Link} to="/" sx={{ textTransform: "none" }}>
         {t("home")}
         </Button>
 

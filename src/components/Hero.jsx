@@ -7,7 +7,7 @@ function Hero() {
 
   return (
     <Box
-      sx={{
+      sx={{ 
         height: "60vh",
         width: "100%",
         backgroundImage: `url(${heroImage})`,
@@ -28,7 +28,14 @@ function Hero() {
       <Typography sx={{ mb: 3 }}>
         {t("platform_subtitle")}
       </Typography>
-      <Button variant="contained" size="large">
+      <Button variant="contained"
+        color="primary"
+        size="large"
+        sx={{
+        textTransform: "none",
+        borderRadius: "8px",
+        px: 4
+        }}>
         {t("book_now")}
       </Button>
     </Box>
